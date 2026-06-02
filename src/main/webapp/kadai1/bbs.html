@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>掲示板</title>
+</head>
+<body>
+	<!-- Step1：掲示板の初期表示 -->
+	<form action="/jmaster/BbsServlet" method="post">
+		<p>名前：</p>
+		<input name="name" />
+		<p>メッセージ：</p>
+		<textarea name="message"></textarea><br />
+		<input type="hidden" name="action" value="write" />
+		<button>書き込み</button>
+	</form>
+	<hr />
+</body>
+</html>
